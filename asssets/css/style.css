@@ -82,6 +82,7 @@ footer{
     color: var(--blanco);
 }
 
-
-
-
+.tooltip-custom .tooltip-inner{
+    background-color: white;    
+    color: black;    
+}
