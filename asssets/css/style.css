@@ -2,6 +2,7 @@
     --blanco:#fff;
     --negro:#000;
 }
+
 /* NAVBAR */
 #titulo-navbar{
     color: var(--blanco);
@@ -21,18 +22,41 @@
 
 .navbar-brand, .nav-link {    
     font-family: "Vidaloka";
-}
+}   
 
+/* QUIENES SOMOS */
 #quienes-somos{
     background-color: var(--negro);
     color: var(--blanco);
+    font-family: "Vidaloka";
 }
 
 .iconos{
     font-size: 25px;
     color: var(--blanco);
-    background-color: cyan;
+    /* background-color: --primary; */
     width: 100%;
     padding: 5px;
 }
+
+/* DESTACADOS */
+#destacados, #contacto{
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-family: "Vidaloka";
+}
+
+.card-title {
+    font-weight: 800;
+    font-family: "Vidaloka";
+}
+
+.card-text{
+    font-weight: 100;
+    color: grey;
+}
+
+
+
+
 

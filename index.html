@@ -39,10 +39,10 @@
                       <a class="nav-link" href="#quienes-somos">Quienes Somos</a>
                     </li>
                     <li class="nav-item">
-                       <a class="nav-link" href="#">Destacados</a>
+                       <a class="nav-link" href="#destacados">Destacados</a>
                     </li>
                     <li class="nav-item">
-                       <a class="nav-link" href="#">Contacto</a>
+                       <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                   </ul>
             </form>
@@ -87,7 +87,7 @@
           <hr>
         <section class="row text-center p-4">
             <section class="col-4">
-                <i class='fa fa-plane iconos'></i>
+                <i class='fa fa-plane iconos bg-primary'></i>
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab animi corrupti, quae, unde ipsa modi obcaecati 
                     alias consequatur rem aliquam expedita quas aut! Temporibus accusantium maxime dolores corporis, autem delectus 
@@ -105,11 +105,11 @@
                      saepe unde officia libero totam cum illum, quidem adipisci nesciunt odio voluptas. Quam, blanditiis atque iste, 
                      facilis, aliquam mollitia adipisci labore iure magni tempore perspiciatis ullam rerum cum eligendi eos porro.                      
                 </p>
-                <i class='fas fa-mountain iconos'></i>
+                <i class='fas fa-mountain iconos bg-primary'></i>
             </section>
 
             <section class="col-4">
-                <i class='fas fa-route iconos'></i>
+                <i class='fas fa-route iconos bg-primary'></i>
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab animi corrupti, quae, unde ipsa modi obcaecati 
                     alias consequatur rem aliquam expedita quas aut! Temporibus accusantium maxime dolores corporis, autem delectus 
@@ -122,11 +122,67 @@
 
     </section>
     <!-- DESTACADOS -->
-    <section id="destacados" class="container-fluid">
+    <section id="destacados" class="container-fluid p-4">
         <h3 class="text-center">DESTACADOS</h3>
+        <hr>
+        
+        <section id="card-container" class="d-flex justify-content-center gap-5 " >
+
+            <div class="card col-2 p-0">
+                <img src="./asssets/img/cards/card1.jpg" class="card-img" alt="Card-1">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Cabaña Coyaique</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                  
+                </div>
+              </div>
+              <div class="card col-2 p-0">
+                <img src="./asssets/img/cards/card2.jpg" class="card-img-top" alt="Card-2">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Campo de Margaritas</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                  
+                </div>
+              </div>
+              <div class="card col-2 p-0">
+                <img src="./asssets/img/cards/card3.jpg" class="card-img-top" alt="Card-3">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Acantilados</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                  
+                </div>
+              </div>
+              <div class="card col-2 p-0">
+                <img src="./asssets/img/cards/card4.jpg" class="card-img-top" alt="Card-4">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Atardecer en Iquique</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                  
+                </div>
+              </div>
+
+        </section>
+   
+    </section>
+    <!-- CONTACTO -->
+    <section id="contacto" class="container-fluid">
+        <h3 class="text-center">CONTACTO</h3>
+        <hr>
+        
+        <div class="mb-3 mx-5 px-5">
+            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1">
+            
+            <label for="exampleFormControlInput2" class="form-label">Asunto</label>
+            <input type="text" class="form-control" id="exampleFormControlInput2">
+          </div>
+          <div class="mb-3 px-5 mx-5">
+            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>            
+            <button type="button" class="btn btn-primary mt-3">Enviar</button>
+        </div>      
 
     </section>
-
+    <!-- FOOTER -->
+    <footer">
+          <h3>VIAJES CHILE</h3>
+    </footer>
 
 
 
