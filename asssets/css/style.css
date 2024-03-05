@@ -2,6 +2,9 @@
     --blanco:#fff;
     --negro:#000;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 /* NAVBAR */
 #titulo-navbar{
@@ -33,8 +36,7 @@
 
 .iconos{
     font-size: 25px;
-    color: var(--blanco);
-    /* background-color: --primary; */
+    color: var(--blanco);    
     width: 100%;
     padding: 5px;
 }
@@ -56,6 +58,29 @@
     color: grey;
 }
 
+/* FOOTER */
+footer{
+    /* background-color:cyan;     */
+    position: relative;
+    font-family: "Vidaloka";
+    font-size: 30px;
+    top: -16px;
+    color: var(--blanco);
+
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+}
+
+#iconos-footer{
+    display: flex;
+    gap: 20px;
+}
+#iconos-footer > a{
+    text-decoration: none;
+    color: var(--blanco);
+}
 
 
 
