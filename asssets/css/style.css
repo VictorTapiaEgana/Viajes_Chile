@@ -1,0 +1,38 @@
+:root{
+    --blanco:#fff;
+    --negro:#000;
+}
+/* NAVBAR */
+#titulo-navbar{
+    color: var(--blanco);
+    font-size: 50px;    
+    text-shadow: 8px 8px 8px rgba(0,0,0,0.72);
+}
+
+#logo-navbar{
+    width: 60px;
+}
+
+#nav-items > .nav-item > .nav-link{
+    color: var(--blanco);
+    font-size: 18px;
+    text-shadow: 8px 8px 8px rgba(0,0,0,0.72);
+}
+
+.navbar-brand, .nav-link {    
+    font-family: "Vidaloka";
+}
+
+#quienes-somos{
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+.iconos{
+    font-size: 25px;
+    color: var(--blanco);
+    background-color: cyan;
+    width: 100%;
+    padding: 5px;
+}
+
