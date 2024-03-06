@@ -1,6 +1,7 @@
 :root{
     --blanco:#fff;
     --negro:#000;
+    --font-family : "Vidaloka";
 }
 html {
     scroll-behavior: smooth;
@@ -24,14 +25,14 @@ html {
 }
 
 .navbar-brand, .nav-link {    
-    font-family: "Vidaloka";
+    font-family:var(--font-family)
 }   
 
 /* QUIENES SOMOS */
 #quienes-somos{
     background-color: var(--negro);
     color: var(--blanco);
-    font-family: "Vidaloka";
+    font-family:var(--font-family);
 }
 
 .iconos{
@@ -45,24 +46,26 @@ html {
 #destacados, #contacto{
     background-color: var(--negro);
     color: var(--blanco);
-    font-family: "Vidaloka";
+    font-family:var(--font-family);
 }
 
 .card-title {
     font-weight: 800;
-    font-family: "Vidaloka";
+    font-family:var(--font-family);
 }
 
 .card-text{
     font-weight: 100;
     color: grey;
 }
+/* CONTACTO */
+
 
 /* FOOTER */
 footer{
     /* background-color:cyan;     */
     position: relative;
-    font-family: "Vidaloka";
+    font-family:var(--font-family);
     font-size: 30px;
     top: -16px;
     color: var(--blanco);
@@ -82,7 +85,9 @@ footer{
     color: var(--blanco);
 }
 
+/* TOOLTIP */
 .tooltip-custom .tooltip-inner{
     background-color: white;    
     color: black;    
 }
+
