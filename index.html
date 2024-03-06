@@ -167,15 +167,15 @@
         <h3 class="text-center">CONTACTO</h3>
         <hr>        
         <div class="mb-3 mx-5 px-5">
-            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1">
+            <label for="nombre-contacto" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre-contacto">
             
             <!-- <label for="exampleFormControlInput2" class="form-label">Asunto</label>
             <input type="text" class="form-control" id="exampleFormControlInput2"> -->
 
             <div class="form">
               <label for="exampleFormControlInput2" class="floatingSelect">Asunto</label>
-              <select class="form-select" id="floatingSelect" aria-label="Floating label select">
+              <select class="form-select" id="asuntoContacto" aria-label="Floating label select">
                 <option selected>Seleccione una opcion</option>
                 <option value="1">Recorridos</option>
                 <option value="2">Proximos Tours</option>
@@ -185,8 +185,8 @@
 
           </div>
           <div class="mb-3 px-5 mx-5">
-            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>            
+            <label for="mensajeContacto" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensajeContacto" rows="3"></textarea>            
             <button id="botonenviar" type="button" class="btn btn-info my-3 text-light" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Enviar Formulario de contacto" data-bs-custom-class="tooltip-custom">Enviar</button>
         </div>  
         
@@ -198,7 +198,7 @@
                 <h1 class="modal-title fs-5  text-dark" id="exampleModalLabel"><img src="./asssets/img/icon-modal/logo_32.png" alt="icono ventana modal">Viajes Chile</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="modal-body">                
+              <div class="modal-body text-dark">                
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-info text-light" data-bs-dismiss="modal">Cerrar</button>                
