@@ -1,7 +1,7 @@
 
 # Viajes Chile 
 
-Examen Final Modulo 1 del curso Fullstack javascript.
+Examen Final Modulo 2 del curso Fullstack javascript.
 
 Se Desarrollo de manera Responsive usando HTML, CSS, BOOTSTRAP y JQUERY, ademas del uso de GoogleFonts y fontawesome
 
