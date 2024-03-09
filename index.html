@@ -24,11 +24,16 @@
 </head>
 <body>
     <!--NAVBAR  -->
-    <nav class="navbar navbar-expand-md bg-transparent fixed-top">  
+    <nav id="navbar"class="navbar navbar-expand-md bg-transparent fixed-top">  
         <div class="container-fluid">
-          <a id="titulo-navbar" class="navbar-brand" href="#"><img id="logo-navbar" src="./asssets/img/favicon/logo.png" alt="logo viajes chile" srcset=""> Viajes Chile</a>
+          
+          <a id="titulo-navbar" class="navbar-brand d-flex  align-items-center" href="#">
+                 <img id="logo-navbar" class="img-fluid" src="./asssets/img/favicon/viajes.svg" alt="logo viajes chile">
+                 <h1 class="display-1">Viajes Chile</h1>
+          </a>
+
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">             
@@ -36,16 +41,16 @@
             <form class="d-flex">
                 <ul id="nav-items" class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item  color-blanco">
-                      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                      <a class="nav-link scroll_to" href="#">Inicio</a>
                     </li>                    
                     <li class="nav-item">
-                      <a class="nav-link" href="#quienes-somos">Quienes Somos</a>
+                      <a class="nav-link scroll_to" href="#quienes-somos">Quienes Somos</a>
                     </li>
                     <li class="nav-item">
-                       <a class="nav-link" href="#destacados">Destacados</a>
+                       <a class="nav-link scroll_to" href="#destacados">Destacados</a>
                     </li>
                     <li class="nav-item">
-                       <a class="nav-link" href="#contacto">Contacto</a>
+                       <a class="nav-link scroll_to" href="#contacto">Contacto</a>
                     </li>
                   </ul>
             </form>
@@ -57,20 +62,20 @@
     <section id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
         <div class="carousel-inner carousel-altura">
           <div class="carousel-item active">
-                <img src="./asssets/img/carrusel/img1.jpg" class="d-block w-100" alt="carousel Imagen 1">
+                <img src="./asssets/img/carrusel/carousel1.jpg" class="d-block w-100" alt="carousel Imagen 1">
               </div>  
           <div class="carousel-item">
-            <img src="./asssets/img/carrusel/img2.jpg" class="d-block w-100" alt="carousel Imagen 2">
+            <img src="./asssets/img/carrusel/carousel2.jpg" class="d-block w-100" alt="carousel Imagen 2">
           </div>         
           <div class="carousel-item">
-            <img src="./asssets/img/carrusel/img4.jpg" class="d-block w-100" alt="carousel Imagen 4">
+            <img src="./asssets/img/carrusel/carousel3.jpg" class="d-block w-100" alt="carousel Imagen 4">
           </div>
-          <div class="carousel-item">
+          <!-- <div class="carousel-item">
             <img src="./asssets/img/carrusel/img5.jpg" class="d-block w-100" alt="carousel Imagen 5">
           </div>
           <div class="carousel-item">
             <img src="./asssets/img/carrusel/img6.jpg" class="d-block w-100" alt="carousel Imagen 6">
-          </div>                 
+          </div>                  -->
         </div>
 
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -84,7 +89,7 @@
         </button>
     </section>
     <!-- QUIENES SOMOS -->
-    <section id="quienes-somos" class="container-fluid">
+    <section id="quienes-somos" class="container-fluid d-none d-md-block">
         <h2 class="text-center p-4">¿Quiénes Somos?</h2>
           <hr>
         <section class="row text-center p-4">
@@ -128,33 +133,35 @@
         <h3 class="text-center">DESTACADOS</h3>
         <hr>
         
-        <section id="card-container" class="d-flex justify-content-center gap-5 " >
+        <section id="card-container" class="d-flex flex-wrap justify-content-center gap-5 flex-lg-row" >
 
-            <div class="card col-2 p-0"  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="destinos del sur de chile" data-bs-custom-class="tooltip-custom">
+            <div class="card col-12 col-md-4 col-xl-2 p-0"  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Region de los Lagos" data-bs-custom-class="tooltip-custom">
                 <img src="./asssets/img/cards/card1.jpg" class="card-img" alt="Card-1">
                 <div class="card-body">
-                  <h5 class="card-title text-center">Cabaña en Coyaique</h5>
+                  <h5 class="card-title text-center">Region de los Lagos</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                  
                 </div>
               </div>
-              <div class="card col-2 p-0"  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Campo de margaritas de la zona central" data-bs-custom-class="tooltip-custom">
+
+              <div class="card col-12 col-md-4 col-xl-2 p-0"  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Lagos y montañas" data-bs-custom-class="tooltip-custom">
                 <img src="./asssets/img/cards/card2.jpg" class="card-img-top" alt="Card-2">
                 <div class="card-body">
-                  <h5 class="card-title text-center">Campo de Margaritas</h5>
+                  <h5 class="card-title text-center">Lagos y montañas</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                  
                 </div>
-              </div>
-              <div class="card col-2 p-0"  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Las mejores playas de chile" data-bs-custom-class="tooltip-custom">
+
+              </div><div class="card col-12 col-md-4 col-xl-2 p-0"  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Salares del norte" data-bs-custom-class="tooltip-custom">
                 <img src="./asssets/img/cards/card3.jpg" class="card-img-top" alt="Card-3">
                 <div class="card-body">
-                  <h5 class="card-title text-center">Acantilados</h5>
+                  <h5 class="card-title text-center">Salares del norte</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                  
                 </div>
               </div>
-              <div class="card col-2 p-0" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Atardeceres en la costa" data-bs-custom-class="tooltip-custom">
+
+              <div class="card col-12 col-md-4 col-xl-2 p-0" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Bosques Patagonicos" data-bs-custom-class="tooltip-custom">
                 <img src="./asssets/img/cards/card4.jpg" class="card-img-top" alt="Card-4">
                 <div class="card-body">
-                  <h5 class="card-title text-center">Atardecer en Iquique</h5>
+                  <h5 class="card-title text-center">Bosques Patagonicos</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                  
                 </div>
               </div>
@@ -166,13 +173,9 @@
     <section id="contacto" class="container-fluid">
         <h3 class="text-center">CONTACTO</h3>
         <hr>        
-        <div class="mb-3 mx-5 px-5">
+        <div class="mb-3 m-2 mx-md-5 px-md-5">
             <label for="nombre-contacto" class="form-label">Nombre</label>
             <input type="text" class="form-control" id="nombre-contacto">
-            
-            <!-- <label for="exampleFormControlInput2" class="form-label">Asunto</label>
-            <input type="text" class="form-control" id="exampleFormControlInput2"> -->
-
             <div class="form">
               <label for="exampleFormControlInput2" class="floatingSelect">Asunto</label>
               <select class="form-select" id="asuntoContacto" aria-label="Floating label select">
@@ -184,7 +187,7 @@
             </div>
 
           </div>
-          <div class="mb-3 px-5 mx-5">
+          <div class="mb-3 m-2 mx-md-5 px-md-5">
             <label for="mensajeContacto" class="form-label">Mensaje</label>
             <textarea class="form-control" id="mensajeContacto" rows="3"></textarea>            
             <button id="botonenviar" type="button" class="btn btn-info my-3 text-light" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Enviar Formulario de contacto" data-bs-custom-class="tooltip-custom">Enviar</button>

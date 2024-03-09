@@ -3,9 +3,6 @@
     --negro:#000;
     --font-family : "Vidaloka";
 }
-html {
-    scroll-behavior: smooth;
-}
 
 /* NAVBAR */
 #titulo-navbar{
@@ -16,6 +13,7 @@ html {
 
 #logo-navbar{
     width: 60px;
+    height: 60px;
 }
 
 #nav-items > .nav-item > .nav-link{
@@ -58,12 +56,9 @@ html {
     font-weight: 100;
     color: grey;
 }
-/* CONTACTO */
-
 
 /* FOOTER */
-footer{
-    /* background-color:cyan;     */
+footer{ 
     position: relative;
     font-family:var(--font-family);
     font-size: 30px;
